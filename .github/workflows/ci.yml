@@ -1,0 +1,25 @@
+name: ci_testes
+on:
+  push:
+  pull_request: 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      DB_USERNAME: ${{ secrets.POSTGRES_USER }}
+      DB_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+      DB_HOST: ${{ secrets.POSTGRES_HOST }}
+      DB_PORT: ${{ secrets.POSTGRES_PORT }}
+      DB_NAME: ${{ secrets.POSTGRES_DB }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest
