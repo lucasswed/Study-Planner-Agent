@@ -1,0 +1,33 @@
+{
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Plan your study with clarity and focus.",
+    "kicker": "Secure access",
+    "cardTitle": "Welcome back",
+    "cardDescription": "Use your credentials to continue your planning.",
+    "form": {
+      "username": {
+        "label": "Username",
+        "placeholder": "Enter your username",
+        "ariaLabel": "Username"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password",
+        "ariaLabel": "Password"
+      }
+    },
+    "actions": {
+      "submit": "Sign in",
+      "loading": "Signing in..."
+    },
+    "errors": {
+      "title": "Unable to sign in",
+      "generic": "Please try again in a moment."
+    },
+    "footer": {
+      "prompt": "Don't have an account?",
+      "cta": "Create account"
+    }
+  }
+}

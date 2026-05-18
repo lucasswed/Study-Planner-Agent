@@ -1,0 +1,33 @@
+{
+  "login": {
+    "title": "Entrar",
+    "subtitle": "Organize seu estudo com clareza e foco.",
+    "kicker": "Acesso seguro",
+    "cardTitle": "Bem-vindo de volta",
+    "cardDescription": "Use suas credenciais para continuar o seu planejamento.",
+    "form": {
+      "username": {
+        "label": "Usuário",
+        "placeholder": "Digite seu usuário",
+        "ariaLabel": "Nome de usuário"
+      },
+      "password": {
+        "label": "Senha",
+        "placeholder": "Digite sua senha",
+        "ariaLabel": "Senha"
+      }
+    },
+    "actions": {
+      "submit": "Entrar",
+      "loading": "Entrando..."
+    },
+    "errors": {
+      "title": "Não foi possível entrar",
+      "generic": "Tente novamente em instantes."
+    },
+    "footer": {
+      "prompt": "Ainda não tem uma conta?",
+      "cta": "Criar conta"
+    }
+  }
+}
