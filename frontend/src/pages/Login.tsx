@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { useState, type ChangeEvent, type FormEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
@@ -22,7 +22,7 @@ type LoginFormState = {
     password: string
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0, y: 16 },
     show: {
         opacity: 1,
@@ -35,7 +35,7 @@ const containerVariants = {
     },
 }
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 12 },
     show: {
         opacity: 1,
@@ -44,7 +44,7 @@ const itemVariants = {
     },
 }
 
-const glowVariants = {
+const glowVariants: Variants = {
     hidden: { opacity: 0, scale: 0.95 },
     show: {
         opacity: 1,

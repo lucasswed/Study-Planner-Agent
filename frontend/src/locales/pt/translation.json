@@ -29,5 +29,42 @@
       "prompt": "Ainda não tem uma conta?",
       "cta": "Criar conta"
     }
+  },
+  "register": {
+    "title": "Criar conta",
+    "subtitle": "Comece a planejar seus estudos com clareza e continuidade.",
+    "kicker": "Comece agora",
+    "cardTitle": "Crie sua conta",
+    "cardDescription": "Escolha um usuário e uma senha segura para começar.",
+    "form": {
+      "username": {
+        "label": "Usuário",
+        "placeholder": "Escolha um usuário",
+        "ariaLabel": "Nome de usuário"
+      },
+      "password": {
+        "label": "Senha",
+        "placeholder": "Crie uma senha",
+        "ariaLabel": "Senha"
+      },
+      "confirmPassword": {
+        "label": "Confirmar senha",
+        "placeholder": "Digite a senha novamente",
+        "ariaLabel": "Confirmar senha"
+      }
+    },
+    "actions": {
+      "submit": "Criar conta",
+      "loading": "Criando conta..."
+    },
+    "errors": {
+      "title": "Não foi possível criar a conta",
+      "generic": "Tente novamente em instantes.",
+      "passwordMismatch": "As senhas não coincidem."
+    },
+    "footer": {
+      "prompt": "Já tem uma conta?",
+      "cta": "Entrar"
+    }
   }
 }

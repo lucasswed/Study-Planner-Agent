@@ -18,14 +18,13 @@ export type RegisterPayload = {
 }
 
 const parseErrorMessage = async (response: Response) => {
+  const fallback = response.statusText || 'Request failed'
   try {
     const data = (await response.json()) as { detail?: string }
-    if (data?.detail) {
-      return data.detail
-    }
+    return data?.detail || fallback
   } catch {
+    return fallback
   }
-  return response.statusText || 'Request failed'
 }
 
 export const loginUser = async ({ username, password }: LoginPayload) => {
